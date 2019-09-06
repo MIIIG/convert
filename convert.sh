@@ -5,7 +5,7 @@
 # Converts *.php, *.html, *.css, *.js files.
 # To add file type by extension, e.g. *.cgi, add '-o -name "*.cgi"' to the find command
 
-find ./ -name "*.php" -o -name "*.html" -o -name "*.css" -o -name "*.js" -type f | while read file; do enca -x UTF-8 $file; done;
+find ./ -name "*.php" -o -name "*.html" -o -name "*.css" -o -name "*.js" -type f | # while read file; do enca -x UTF-8 $file; done;
 while read file
 do
 echo " $file"
